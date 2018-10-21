@@ -18,7 +18,10 @@ Proyecto de clase de Sistemas Multiagentes impartido en la ESIIAB
   + Mónica Sánchez Ruiz
 + Cliente Python (Consumidor):
   + ...
-+ ...
++ Cliente JavaScript (Consumidor):
+  + Pedro José Villena
+  + Jaime Tolosa
++ ... 
 
 -----
 
