@@ -44,7 +44,7 @@ Proyecto de clase de Sistemas Multiagentes impartido en la ESIIAB
 ------
 
 # Propuesta de mensaje común XML
-```
+```XML
 <mensaje>
   <emisor>
     <direccion>
