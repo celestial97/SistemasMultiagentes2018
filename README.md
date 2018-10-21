@@ -40,7 +40,9 @@ Proyecto de clase de Sistemas Multiagentes impartido en la ESIIAB
   + ...
 + Consumidor - Tienda: 
   + ...
-  
+
+------
+
 # Propuesta de mensaje común XML
 ```
 <mensaje>
