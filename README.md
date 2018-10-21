@@ -9,9 +9,13 @@ Proyecto de clase de Sistemas Multiagentes impartido en la ESIIAB
   + Guillermo Fernández
   + Luis González
 + Servidor PHP (Tienda):
-  + ...
+  + Bernardo
+  + Anselmo
+  + Mercedes
 + Servidor Java (Tienda):
-  + ...
+  + Óscar Gómez Monedero
+  + Jose Antonio Serrano Esparcia
+  + Mónica Sánchez Ruiz
 + Cliente Python (Consumidor):
   + ...
 + ...
