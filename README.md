@@ -39,7 +39,22 @@ Proyecto de clase de Sistemas Multiagentes impartido en la ESIIAB
     + Equipos involucrados: ...
   + ...
 + Consumidor - Tienda: 
-  + ...
+  + Inicialización
+    + Estructura: 
+      + Consumidor:
+        - Id cliente
+        - Ip cliente
+      + Tienda:
+        - Id tienda
+        - Estado
+        - Mensaje informativo
+    + Equipos involucrados: Grupo 3
+  + Compra de producto
+    + Estructura: ...
+    + Equipos involucrados: 
+  + Fin de compra 
+    + Estructura: ...
+    + Equipos involucrados: ...
 
 ------
 

@@ -1,0 +1,24 @@
+<mensaje>
+  <emisor>
+    <direccion>
+      <ip>Direccion tienda</ip>
+      <puerto>80</puerto>
+    </direccion>
+    <rol>tienda</rol>
+  </emisor>
+  <receptor>
+    <direccion>
+      <ip>Direccion cliente</ip>
+      <puerto>80</puerto>
+    </direccion>
+    <rol>tienda</rol>
+  </receptor>
+  <tipo> conexion </tipo>
+  <cuerpo>
+    <producto>
+        <id> IDTienda </id>
+        <estado> Ok | Error </estado>
+        <msg>Bienvenido a la tienda | No podemos conectarle en este momento</msg>
+    </producto>
+  </cuerpo>
+</mensaje>

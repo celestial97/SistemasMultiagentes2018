@@ -1,0 +1,22 @@
+<mensaje>
+  <emisor>
+    <direccion>
+      <ip>direccion tienda</ip>
+      <puerto>80</puerto>
+    </direccion>
+    <rol>cliente</rol>
+  </emisor>
+  <receptor>
+    <direccion>
+      <ip>Direccion cliente</ip>
+      <puerto>80</puerto>
+    </direccion>
+    <rol>tienda</rol>
+  </receptor>
+  <tipo> conexion </tipo>
+  <cuerpo>
+    <id> IDcliente </id>
+    <ip> ip cliente </ip>
+    <puerto> puerto </puerto>
+  </cuerpo>
+</mensaje>
