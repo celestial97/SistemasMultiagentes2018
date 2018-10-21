@@ -13,11 +13,11 @@
 		</direccion>
 		<rol>Monitor</rol>
 	</receptor>
-	<cuerpo orden="Compra terminada">
-		<Hora>20:12:56</Hora>
-		<id>23</id>  
-		<NArtículos>5</NArtículos> 
-		<listaCompra>
+	<cuerpo orden="Peticion listacompra terminada">
+		<id>23</id>
+		<hora>20:12:56</hora>  
+		<nArticulos>5</nArticulos> 
+		<listacompra>
 			<producto>
 				<nombre>producto1</nombre>
 				<cantidad>2</cantidad>
@@ -26,6 +26,6 @@
 				<nombre>producto2</nombre>
 				<cantidad>3</cantidad>
 			</producto>
-		</listaCompra>
+		</listacompra>
 	</cuerpo>
 </mensaje>
