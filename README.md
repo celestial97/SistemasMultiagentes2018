@@ -25,8 +25,7 @@ Proyecto de clase de Sistemas Multiagentes impartido en la ESIIAB
 # Mensajes Necesarios
 + Monitor - Tienda: 
   + Inicialización
-    + Estructura: ...
-    + Equipos involucrados: ...
+    + Estructura: https://github.com/Kaysera/SistemasMultiagentes2018/blob/master/Grupos/G6/EjemploInicializacionTienda.xml
   + Cierre de tienda
       + Estructura: https://github.com/Kaysera/SistemasMultiagentes2018/blob/master/Grupos/G6/EjemploEvento.xml
 + Monitor - Consumidor: 
