@@ -6,12 +6,12 @@ Proyecto de clase de Sistemas Multiagentes impartido en la ESIIAB
 
 ## Tabla de contenidos
 
-- [Sistemas Multiagentes 2018](#sistemas-multiagentes-2018)
-  - [Tabla de contenidos](#tabla-de-contenidos)
-  - [Partes diferenciadas y equipo que las realiza](#partes-diferenciadas-y-equipo-que-las-realiza)
-  - [Flujo de trabajo de una simulación](#flujo-de-trabajo-de-una-simulación)
-  - [Mensajes Necesarios](#mensajes-necesarios)
-  - [Propuesta de mensaje común XML](#propuesta-de-mensaje-común-xml)
+
+- [Tabla de contenidos](#tabla-de-contenidos)
+- [Partes diferenciadas y equipo que las realiza](#partes-diferenciadas-y-equipo-que-las-realiza)
+- [Flujo de trabajo de una simulación](#flujo-de-trabajo-de-una-simulación)
+- [Mensajes necesarios](#mensajes-necesarios)
+- [Propuesta de mensaje común XML](#propuesta-de-mensaje-común-xml)
 
 -----
 
@@ -49,7 +49,7 @@ Proyecto de clase de Sistemas Multiagentes impartido en la ESIIAB
 
 -----
 
-## Mensajes Necesarios
+## Mensajes necesarios
 
 + Monitor - Tienda:
   + Inicialización
