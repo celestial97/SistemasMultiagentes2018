@@ -5,6 +5,7 @@
             <puerto>80</puerto>
         </direccion>
         <rol>Monitor</rol>
+        <hora>20:13:00</hora> 
     </emisor>
     <receptor>
         <direccion>
@@ -14,8 +15,7 @@
         <rol>Cliente</rol>            
     </receptor>
     <cuerpo orden="Respuesta listacompra terminada">
-        <id>23</id>
-        <hora>20:13:00</hora>  
+        <idCliente>23</idCLiente> 
         <nArticulos>5</nArticulos> 
     </cuerpo>
 </mensaje>

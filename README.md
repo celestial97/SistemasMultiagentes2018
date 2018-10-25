@@ -60,7 +60,12 @@ Proyecto de clase de Sistemas Multiagentes impartido en la ESIIAB
   + Inicialización
     + Estructura: https://github.com/Kaysera/SistemasMultiagentes2018/blob/master/Grupos/G6/EjemploInicializacionCliente.xml
   + Compra de producto
-    + Estructura: https://github.com/Kaysera/SistemasMultiagentes2018/blob/master/Grupos/G5/comprar.xml
+    + Estructura: ...
+    + Equipos involucrados: ...
+  + Fin de compra 
+    + EstructuraG1: https://github.com/Kaysera/SistemasMultiagentes2018/tree/master/Grupos/G1
+    + EstructuraG5: https://github.com/Kaysera/SistemasMultiagentes2018/blob/master/Grupos/G5/comprar.xml
+    + Equipos involucrados: G1, G5
   + Fin de compra
     + Estructura: ...
     + Equipos involucrados: ...
