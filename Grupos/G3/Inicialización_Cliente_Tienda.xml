@@ -1,21 +1,21 @@
 <mensaje>
   <emisor>
     <direccion>
-      <ip>direccion tienda</ip>
+      <ip>192.168.1.1</ip>
       <puerto>80</puerto>
     </direccion>
     <rol>cliente</rol>
   </emisor>
   <receptor>
     <direccion>
-      <ip>Direccion cliente</ip>
+      <ip>192.168.1.2</ip>
       <puerto>80</puerto>
     </direccion>
     <rol>tienda</rol>
   </receptor>
   <tipo> conexion </tipo>
   <cuerpo>
-    <id> IDcliente </id>
+    <msg> Quiero conectarme </msg>
     <ip> ip cliente </ip>
     <puerto> puerto </puerto>
   </cuerpo>

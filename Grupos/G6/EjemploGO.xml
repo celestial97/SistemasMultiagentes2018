@@ -4,19 +4,18 @@
       <ip>192.168.1.1</ip>
       <puerto>80</puerto>
     </direccion>
-    <rol>tienda</rol>
+    <rol>Monitor</rol>
   </emisor>
   <receptor>
     <direccion>
       <ip>192.168.1.2</ip>
       <puerto>80</puerto>
     </direccion>
-    <rol>tienda</rol>
+    <rol>Comprador</rol>
   </receptor>
-  <tipo> conexion </tipo>
+  <tipo>evento</tipo>
   <cuerpo>
-        <id> IDTienda </id>
-        <estado> Ok | Error </estado>
-        <msg>Mensaje de aviso</msg>
+    <tipoEvento>GO</tipoEvento>
+    <contenido>Inicio de simulacion</contenido>
   </cuerpo>
 </mensaje>

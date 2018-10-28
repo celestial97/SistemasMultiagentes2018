@@ -16,6 +16,6 @@
   <tipo>evento</tipo>
   <cuerpo>
     <tipoEvento>Aviso|Error|Evento</tipoEvento>
-    <mensaje>Mensaje de evento</mensaje>
+    <contenido>Mensaje de evento</contenido>
   </cuerpo>
 </mensaje>

@@ -1,3 +1,4 @@
+
 <mensaje>
   <emisor>
     <direccion>
@@ -15,7 +16,7 @@
   </receptor>
   <tipo>inicializacion</tipo>
   <cuerpo>
-    <listaCompra>
+    <listaProductos>
       <producto>
         <nombre>producto1</nombre>
         <cantidad>2</cantidad>
@@ -32,14 +33,7 @@
         <nombre>producto5</nombre>
         <cantidad>6</cantidad>
       </producto>
-    </listaCompra>
-    <listaTiendas>
-      <tienda>
-        <direccion>
-          <ip>192.168.1.3</ip>
-          <puerto>80</puerto>
-        </direccion>
-      </tienda>
-    </listaTiendas>
+    </listaProductos>
   </cuerpo>
 </mensaje>
+

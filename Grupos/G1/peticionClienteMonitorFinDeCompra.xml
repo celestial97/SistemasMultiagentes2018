@@ -1,0 +1,31 @@
+<mensaje>
+	<emisor>
+		<direccion>
+			<ip>192.168.1.1</ip>
+			<puerto>80</puerto>
+		</direccion>
+		<rol>Cliente</rol>
+		<hora>20:12:56</hora>
+	</emisor>
+	<receptor>
+		<direccion>
+			<ip>192.168.1.2</ip>
+			<puerto>80</puerto>
+		</direccion>
+		<rol>Monitor</rol>
+	</receptor>
+	<cuerpo orden="Peticion listacompra terminada">
+		<idCLiente>23</idCliente>  
+		<nArticulos>5</nArticulos> 
+		<listacompra>
+			<producto>
+				<nombre>producto1</nombre>
+				<cantidad>2</cantidad>
+			</producto>
+			<producto>
+				<nombre>producto2</nombre>
+				<cantidad>3</cantidad>
+			</producto>
+		</listacompra>
+	</cuerpo>
+</mensaje>
