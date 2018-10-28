@@ -73,8 +73,8 @@ Proyecto de clase de Sistemas Multiagentes impartido en la ESIIAB
 + Consumidor - Tienda: 
   + Inicialización
     + Estructura: 
-      + https://github.com/Kaysera/SistemasMultiagentes2018/blob/master/Grupos/G3/Inicialización_Tienda_Cliente.xml
-      + https://github.com/Kaysera/SistemasMultiagentes2018/blob/master/Grupos/G3/Inicialización_Cliente_Tienda.xml
+      + https://github.com/Kaysera/SistemasMultiagentes2018/blob/master/Grupos/G3/Inicializaci%C3%B3n_Cliente_Tienda.xml
+      + https://github.com/Kaysera/SistemasMultiagentes2018/blob/master/Grupos/G3/Inicializaci%C3%B3n_Cliente_Tienda.xml
     + Equipos involucrados: Grupo 3
   + Compra de producto
     + Estructura: https://github.com/Kaysera/SistemasMultiagentes2018/blob/master/Grupos/G5/comprar.xml
