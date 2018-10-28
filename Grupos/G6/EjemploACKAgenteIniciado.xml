@@ -4,18 +4,18 @@
       <ip>192.168.1.1</ip>
       <puerto>80</puerto>
     </direccion>
-    <rol>Monitor</rol>
+    <rol>Comprador</rol>
   </emisor>
   <receptor>
     <direccion>
       <ip>192.168.1.2</ip>
       <puerto>80</puerto>
     </direccion>
-    <rol>Comprador</rol>
+    <rol>Monitor</rol>
   </receptor>
   <tipo>evento</tipo>
   <cuerpo>
-    <tipoEvento>Aviso|Error|Evento</tipoEvento>
-    <contenido>Mensaje de evento</contenido>
+    <tipoEvento>ACK</tipoEvento>
+    <contenido>Agente iniciado correctamente</contenido>
   </cuerpo>
 </mensaje>

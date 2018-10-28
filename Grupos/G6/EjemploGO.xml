@@ -15,7 +15,7 @@
   </receptor>
   <tipo>evento</tipo>
   <cuerpo>
-    <tipoEvento>Aviso|Error|Evento</tipoEvento>
-    <contenido>Mensaje de evento</contenido>
+    <tipoEvento>GO</tipoEvento>
+    <contenido>Inicio de simulacion</contenido>
   </cuerpo>
 </mensaje>
