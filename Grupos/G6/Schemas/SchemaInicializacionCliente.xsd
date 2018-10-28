@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="https://www.w3schools.com" xmlns="https://www.w3schools.com" elementFormDefault="qualified">
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
 <xs:element name="mensaje">
   <xs:complexType>
@@ -39,7 +39,7 @@
 	<xs:element name="cuerpo">
           <xs:complexType>
             <xs:sequence>
-	      <xs:element name="listaProductos">
+	      <xs:element name="listaCompra">
 		<xs:complexType>
 		  <xs:sequence>
 		    <xs:element name="producto" maxOccurs="unbounded">
