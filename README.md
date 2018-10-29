@@ -112,5 +112,6 @@ Proyecto de clase de Sistemas Multiagentes impartido en la ESIIAB
 ```
 
 ## FAQ
-Q: ¿Qué valores puede tomar el campo <rol>?
-  A: __Comprador__, __Tienda__ y __Monitor__
+Q: ¿Qué valores puede tomar el campo `<rol>`?
+
+A: __Comprador__, __Tienda__ y __Monitor__
