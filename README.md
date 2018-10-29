@@ -12,6 +12,7 @@ Proyecto de clase de Sistemas Multiagentes impartido en la ESIIAB
 - [Flujo de trabajo de una simulación](#flujo-de-trabajo-de-una-simulación)
 - [Mensajes necesarios](#mensajes-necesarios)
 - [Propuesta de mensaje común XML](#propuesta-de-mensaje-común-xml)
+- [FAQ](#faq)
 
 -----
 
@@ -109,3 +110,7 @@ Proyecto de clase de Sistemas Multiagentes impartido en la ESIIAB
   </cuerpo>
 </mensaje>
 ```
+
+## FAQ
+Q: ¿Qué valores puede tomar el campo <rol>?
+  A: __Comprador__, __Tienda__ y __Monitor__
