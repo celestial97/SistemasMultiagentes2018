@@ -94,6 +94,7 @@ Proyecto de clase de Sistemas Multiagentes impartido en la ESIIAB
     <direccion>
       <ip>192.168.1.1</ip>
       <puerto>80</puerto>
+      <id>123</id>
     </direccion>
     <rol>tienda</rol>
   </emisor>
@@ -101,6 +102,7 @@ Proyecto de clase de Sistemas Multiagentes impartido en la ESIIAB
     <direccion>
       <ip>192.168.1.2</ip>
       <puerto>80</puerto>
+      <id>456</id>
     </direccion>
     <rol>comprador</rol>
   </receptor>
