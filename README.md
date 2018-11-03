@@ -115,3 +115,8 @@ Proyecto de clase de Sistemas Multiagentes impartido en la ESIIAB
 Q: ¿Qué valores puede tomar el campo `<rol>`?
 
 A: __Comprador__, __Tienda__ y __Monitor__
+
+Q: ¿Cómo se identifica a cada agente?
+
+A: + Al __Monitor__ se le identificará por una _IP_ y _puerto_, que serán conocidos por todos de antemano
+   + A los __Compradores__ y __Tiendas__ se les identificará por una _IP_, un _puerto_ y un _ID_. Una misma combinación de _IP_ y _puerto_ puede tener varios agentes, por lo que el _ID_ será necesario. Dicho _ID_ será porporcionado por el __Monitor__
