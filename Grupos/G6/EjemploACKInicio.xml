@@ -17,5 +17,6 @@
   <cuerpo>
     <tipoEvento>ACK</tipoEvento>
     <contenido>Inicio registrado</contenido>
+    <nuevoID>1526</nuevoID>
   </cuerpo>
 </mensaje>
