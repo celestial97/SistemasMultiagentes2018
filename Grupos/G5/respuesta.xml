@@ -4,6 +4,7 @@
         <direccion> 
             <ip>192.168.1.1</ip>
             <puerto>80</puerto> 
+            <id>234</id>
         </direccion>    
         <rol>Tienda</rol> 
     </emisor> 
@@ -11,6 +12,7 @@
         <direccion> 
             <ip>192.168.1.2</ip> 
             <puerto>80</puerto> 
+            <id>126</id>
         </direccion>    
         <rol>Comprador</rol>   
     </receptor> 
