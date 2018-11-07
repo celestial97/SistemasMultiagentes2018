@@ -43,7 +43,7 @@ Proyecto de clase de Sistemas Multiagentes impartido en la ESIIAB
 
 1. Todos los agentes se inicializan en sus máquinas respectivas.
 2. Los agentes Tienda y Consumidor le mandan una petición XML ([plantilla](https://github.com/Kaysera/SistemasMultiagentes2018/blob/master/Grupos/G6/EjemploPeticionConexion.xml)) de conexión al Monitor. Para ello, se realizará una petición POST a `direccionMonitor:puertoMonitor/init`
-3. El Monitor responderá a la petición ([plantilla](https://github.com/Kaysera/SistemasMultiagentes2018/blob/master/Grupos/G6/EjemploACKInicio.xml)) y los agentes Tienda y Consumidor se quedarán a la espera.
+3. El Monitor responderá a la petición ([plantilla](https://github.com/Kaysera/SistemasMultiagentes2018/blob/master/Grupos/G6/EjemploACKInicio.xml)) donde se asignará el ID y los agentes Tienda y Consumidor se quedarán a la espera.
 4. El Monitor enviará un mensaje de inicialización a los agentes Tienda ([plantilla](https://github.com/Kaysera/SistemasMultiagentes2018/blob/master/Grupos/G6/EjemploInicializacionTienda.xml)) y Consumidor ([plantilla](https://github.com/Kaysera/SistemasMultiagentes2018/blob/master/Grupos/G6/EjemploInicializacionCliente.xml)).
 5. Los agentes Tienda y Consumidor le mandarán una respuesta ([plantilla](https://github.com/Kaysera/SistemasMultiagentes2018/blob/master/Grupos/G6/EjemploACKAgenteIniciado.xml)) de confirmación y quedarán a la espera. Aquellos clientes que no envíen una confirmación no entrarán en la simulación.
 6. El Monitor enviará un mensaje de inicio de simulación ([plantilla](https://github.com/Kaysera/SistemasMultiagentes2018/blob/master/Grupos/G6/EjemploGO.xml)) a los agentes Tienda y Consumidor, que no tendrá que ser respondido, y los agentes Tienda y Consumidor iniciarán la simulación
