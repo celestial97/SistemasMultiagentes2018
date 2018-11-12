@@ -13,6 +13,7 @@
            	  <xs:sequence>
 		    <xs:element name="ip" type="ip"/>
 		    <xs:element name="puerto" type="xs:integer"/>
+        <xs:element name="id" type="xs:integer"/>
             	  </xs:sequence>
           	</xs:complexType>
               </xs:element>

@@ -48,6 +48,7 @@
             <xs:sequence>
 	      <xs:element name="tipoEvento" type="xs:string" fixed="ACK"/>
 	      <xs:element name="contenido" type="xs:string" fixed="Inicio registrado"/>
+        <xs:element name="nuevoID" type="xs:integer" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
