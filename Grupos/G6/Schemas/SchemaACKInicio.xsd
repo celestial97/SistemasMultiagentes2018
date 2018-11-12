@@ -28,6 +28,7 @@
            	  <xs:sequence>
 		    <xs:element name="ip" type="ip"/>
 		    <xs:element name="puerto" type="xs:integer"/>
+        <xs:element name="id" type="xs:string" fixed='undefined'/>
             	  </xs:sequence>
           	</xs:complexType>
               </xs:element>
@@ -43,6 +44,7 @@
           </xs:complexType>
         </xs:element>
 	<xs:element name="tipo" type="xs:string" fixed="evento"/>
+  <xs:element name="hora" type="xs:string"/>
 	<xs:element name="cuerpo">
           <xs:complexType>
             <xs:sequence>
