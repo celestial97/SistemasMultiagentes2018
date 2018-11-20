@@ -57,11 +57,11 @@ Proyecto de clase de Sistemas Multiagentes impartido en la ESIIAB
 1. Todos los agentes se inicializan en sus máquinas respectivas.
 2. Los agentes Consumidor le mandan una petición XML ([plantilla](https://github.com/Kaysera/SistemasMultiagentes2018/blob/master/Grupos/G6/EjemploPeticionConexion.xml)) de conexión al Monitor. Para ello, se realizará una petición POST a `direccionMonitor:puertoMonitor/init`
 3. El Monitor responderá a la petición ([plantilla](https://github.com/Kaysera/SistemasMultiagentes2018/blob/master/Grupos/G6/EjemploACKInicio.xml)) donde se asignará el ID.
-4. Los agentes Consumidor se quedarán a la espera realizando un polling (plantilla) con una petición POST a `direccionMonitor:puertoMonitor/prepareCliente`
-5. El Monitor responderá con un mensaje negativo (plantilla) mientras la simulación no esté preparada. Cuando lo esté, pasará al paso 6
+4. Los agentes Consumidor se quedarán a la espera realizando un polling ([plantilla](https://github.com/Kaysera/SistemasMultiagentes2018/blob/master/Grupos/G6/EjemploPolling.xml)) con una petición POST a `direccionMonitor:puertoMonitor/prepareCliente`
+5. El Monitor responderá con un mensaje negativo ([plantilla](https://github.com/Kaysera/SistemasMultiagentes2018/blob/master/Grupos/G6/EjemploNotReady.xml)) mientras la simulación no esté preparada. Cuando lo esté, pasará al paso 6
 6. El Monitor responderá con un mensaje de inicialización a los agentes Consumidor ([plantilla](https://github.com/Kaysera/SistemasMultiagentes2018/blob/master/Grupos/G6/EjemploInicializacionCliente.xml)).
-7. LLos agentes Consumidor se quedarán a la espera realizando un polling (plantilla) con una petición POST a `direccionMonitor:puertoMonitor/simulationReady`
-8. El Monitor responderá con un mensaje negativo (plantilla) mientras la simulación no esté iniciada. Cuando lo esté, pasará al paso 9
+7. LLos agentes Consumidor se quedarán a la espera realizando un polling ([plantilla](https://github.com/Kaysera/SistemasMultiagentes2018/blob/master/Grupos/G6/EjemploPolling.xml)) con una petición POST a `direccionMonitor:puertoMonitor/simulationReady`
+8. El Monitor responderá con un mensaje negativo ([plantilla](https://github.com/Kaysera/SistemasMultiagentes2018/blob/master/Grupos/G6/EjemploNotReady.xml)) mientras la simulación no esté iniciada. Cuando lo esté, pasará al paso 9
 9. El Monitor enviará un mensaje de inicio de simulación ([plantilla](https://github.com/Kaysera/SistemasMultiagentes2018/blob/master/Grupos/G6/EjemploGO.xml)) a los agentes Consumidor, que no tendrá que ser respondido, y los agentes Consumidor iniciarán la simulación
 
 -----
