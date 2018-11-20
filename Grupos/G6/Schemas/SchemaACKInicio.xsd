@@ -44,7 +44,8 @@
           </xs:complexType>
         </xs:element>
 	<xs:element name="tipo" type="xs:string" fixed="evento"/>
-  <xs:element name="hora" type="xs:string"/>
+	<xs:element name="fecha" type="xs:date"/>
+	<xs:element name="hora" type="xs:time"/>
 	<xs:element name="cuerpo">
           <xs:complexType>
             <xs:sequence>
