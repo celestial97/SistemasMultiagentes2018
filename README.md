@@ -122,6 +122,8 @@ Proyecto de clase de Sistemas Multiagentes impartido en la ESIIAB
     <rol>comprador</rol>
   </receptor>
   <tipo>venta</tipo>
+  <fecha>20/10/2018</fecha>
+  <hora>15:58:32</hora>
   <cuerpo>
     ...
   </cuerpo>
