@@ -6,13 +6,15 @@ Proyecto de clase de Sistemas Multiagentes impartido en la ESIIAB
 
 ## Tabla de contenidos
 
-
-- [Tabla de contenidos](#tabla-de-contenidos)
-- [Partes diferenciadas y equipo que las realiza](#partes-diferenciadas-y-equipo-que-las-realiza)
-- [Flujo de trabajo de una simulación](#flujo-de-trabajo-de-una-simulación)
-- [Mensajes necesarios](#mensajes-necesarios)
-- [Propuesta de mensaje común XML](#propuesta-de-mensaje-común-xml)
-- [FAQ](#faq)
+- [Sistemas Multiagentes 2018](#sistemas-multiagentes-2018)
+  - [Tabla de contenidos](#tabla-de-contenidos)
+  - [Partes diferenciadas y equipo que las realiza](#partes-diferenciadas-y-equipo-que-las-realiza)
+  - [Flujo de trabajo de una simulación](#flujo-de-trabajo-de-una-simulaci%C3%B3n)
+    - [Tiendas](#tiendas)
+    - [Consumidores](#consumidores)
+  - [Mensajes necesarios](#mensajes-necesarios)
+  - [Propuesta de mensaje común XML](#propuesta-de-mensaje-com%C3%BAn-xml)
+  - [FAQ](#faq)
 
 -----
 
@@ -41,12 +43,26 @@ Proyecto de clase de Sistemas Multiagentes impartido en la ESIIAB
 
 ## Flujo de trabajo de una simulación
 
+### Tiendas
+
 1. Todos los agentes se inicializan en sus máquinas respectivas.
-2. Los agentes Tienda y Consumidor le mandan una petición XML ([plantilla](https://github.com/Kaysera/SistemasMultiagentes2018/blob/master/Grupos/G6/EjemploPeticionConexion.xml)) de conexión al Monitor. Para ello, se realizará una petición POST a `direccionMonitor:puertoMonitor/init`
-3. El Monitor responderá a la petición ([plantilla](https://github.com/Kaysera/SistemasMultiagentes2018/blob/master/Grupos/G6/EjemploACKInicio.xml)) donde se asignará el ID y los agentes Tienda y Consumidor se quedarán a la espera.
-4. El Monitor enviará un mensaje de inicialización a los agentes Tienda ([plantilla](https://github.com/Kaysera/SistemasMultiagentes2018/blob/master/Grupos/G6/EjemploInicializacionTienda.xml)) y Consumidor ([plantilla](https://github.com/Kaysera/SistemasMultiagentes2018/blob/master/Grupos/G6/EjemploInicializacionCliente.xml)).
-5. Los agentes Tienda y Consumidor le mandarán una respuesta ([plantilla](https://github.com/Kaysera/SistemasMultiagentes2018/blob/master/Grupos/G6/EjemploACKAgenteIniciado.xml)) de confirmación y quedarán a la espera. Aquellos clientes que no envíen una confirmación no entrarán en la simulación.
-6. El Monitor enviará un mensaje de inicio de simulación ([plantilla](https://github.com/Kaysera/SistemasMultiagentes2018/blob/master/Grupos/G6/EjemploGO.xml)) a los agentes Tienda y Consumidor, que no tendrá que ser respondido, y los agentes Tienda y Consumidor iniciarán la simulación
+2. Los agentes Tienda le mandan una petición XML ([plantilla](https://github.com/Kaysera/SistemasMultiagentes2018/blob/master/Grupos/G6/EjemploPeticionConexion.xml)) de conexión al Monitor. Para ello, se realizará una petición POST a `direccionMonitor:puertoMonitor/init`
+3. El Monitor responderá a la petición ([plantilla](https://github.com/Kaysera/SistemasMultiagentes2018/blob/master/Grupos/G6/EjemploACKInicio.xml)) donde se asignará el ID y los agentes Tienda se quedarán a la espera.
+4. El Monitor enviará un mensaje de inicialización a los agentes Tienda ([plantilla](https://github.com/Kaysera/SistemasMultiagentes2018/blob/master/Grupos/G6/EjemploInicializacionTienda.xml))
+5. Los agentes Tienda le mandarán una respuesta ([plantilla](https://github.com/Kaysera/SistemasMultiagentes2018/blob/master/Grupos/G6/EjemploACKAgenteIniciado.xml)) de confirmación y quedarán a la espera. Aquellos clientes que no envíen una confirmación no entrarán en la simulación.
+6. El Monitor enviará un mensaje de inicio de simulación ([plantilla](https://github.com/Kaysera/SistemasMultiagentes2018/blob/master/Grupos/G6/EjemploGO.xml)) a los agentes Tienda, que no tendrá que ser respondido, y los agentes Tienda y Consumidor iniciarán la simulación
+
+### Consumidores
+
+1. Todos los agentes se inicializan en sus máquinas respectivas.
+2. Los agentes Consumidor le mandan una petición XML ([plantilla](https://github.com/Kaysera/SistemasMultiagentes2018/blob/master/Grupos/G6/EjemploPeticionConexion.xml)) de conexión al Monitor. Para ello, se realizará una petición POST a `direccionMonitor:puertoMonitor/init`
+3. El Monitor responderá a la petición ([plantilla](https://github.com/Kaysera/SistemasMultiagentes2018/blob/master/Grupos/G6/EjemploACKInicio.xml)) donde se asignará el ID.
+4. Los agentes Consumidor se quedarán a la espera realizando un polling (plantilla) con una petición POST a `direccionMonitor:puertoMonitor/prepareCliente`
+5. El Monitor responderá con un mensaje negativo (plantilla) mientras la simulación no esté preparada. Cuando lo esté, pasará al paso 6
+6. El Monitor responderá con un mensaje de inicialización a los agentes Consumidor ([plantilla](https://github.com/Kaysera/SistemasMultiagentes2018/blob/master/Grupos/G6/EjemploInicializacionCliente.xml)).
+7. LLos agentes Consumidor se quedarán a la espera realizando un polling (plantilla) con una petición POST a `direccionMonitor:puertoMonitor/simulationReady`
+8. El Monitor responderá con un mensaje negativo (plantilla) mientras la simulación no esté iniciada. Cuando lo esté, pasará al paso 9
+9. El Monitor enviará un mensaje de inicio de simulación ([plantilla](https://github.com/Kaysera/SistemasMultiagentes2018/blob/master/Grupos/G6/EjemploGO.xml)) a los agentes Consumidor, que no tendrá que ser respondido, y los agentes Consumidor iniciarán la simulación
 
 -----
 
@@ -64,8 +80,8 @@ Proyecto de clase de Sistemas Multiagentes impartido en la ESIIAB
     + Estructura: ...
     + Equipos involucrados: ...
   + Fin de compra 
-    + EstructuraG1: https://github.com/Kaysera/SistemasMultiagentes2018/tree/master/Grupos/G1
-    + EstructuraG5: https://github.com/Kaysera/SistemasMultiagentes2018/blob/master/Grupos/G5/comprar.xml
+    + Estructura G1: https://github.com/Kaysera/SistemasMultiagentes2018/tree/master/Grupos/G1
+    + Estructura G5: https://github.com/Kaysera/SistemasMultiagentes2018/blob/master/Grupos/G5/comprar.xml
     + Equipos involucrados: G1, G5
   + Fin de compra
     + Estructura: ...
@@ -83,7 +99,6 @@ Proyecto de clase de Sistemas Multiagentes impartido en la ESIIAB
   + Fin de compra 
     + Estructura: ...
     + Equipos involucrados: ...
-
 
 
 ## Propuesta de mensaje común XML

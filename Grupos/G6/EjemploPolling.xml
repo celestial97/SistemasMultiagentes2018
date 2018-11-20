@@ -1,0 +1,21 @@
+<mensaje>
+  <emisor>
+    <direccion>
+      <ip>192.168.1.1</ip>
+      <puerto>80</puerto>
+      <id>11</id>
+    </direccion>
+    <rol>Comprador</rol>
+  </emisor>
+  <receptor>
+    <direccion>
+      <ip>192.168.1.2</ip>
+      <puerto>80</puerto>
+    </direccion>
+    <rol>Monitor</rol>
+  </receptor>
+  <tipo>Polling</tipo>
+  <cuerpo>
+    <tipoEvento>Is ready</tipoEvento>
+  </cuerpo>
+</mensaje>
