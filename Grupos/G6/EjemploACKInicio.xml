@@ -14,6 +14,8 @@
     <rol>Comprador</rol>
   </receptor>
   <tipo>evento</tipo>
+  <fecha>20/10/2018</fecha>
+  <hora>15:58:32</hora>
   <cuerpo>
     <tipoEvento>ACK</tipoEvento>
     <contenido>Inicio registrado</contenido>

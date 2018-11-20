@@ -16,6 +16,8 @@
     <rol>Tienda</rol>
   </receptor>
   <tipo>inicializacion</tipo>
+  <fecha>20/10/2018</fecha>
+  <hora>15:58:32</hora>
   <cuerpo>
     <listaProductos>
       <producto>
