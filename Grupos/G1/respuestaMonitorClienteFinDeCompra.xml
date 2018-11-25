@@ -15,7 +15,7 @@
         <rol>Cliente</rol>            
     </receptor>
     <cuerpo orden="Respuesta listacompra terminada">
-        <idCliente>23</idCLiente> 
+        <idCliente>23</idCliente> 
         <nArticulos>5</nArticulos> 
     </cuerpo>
 </mensaje>
