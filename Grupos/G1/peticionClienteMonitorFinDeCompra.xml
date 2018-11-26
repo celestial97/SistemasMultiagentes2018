@@ -15,7 +15,7 @@
 		<rol>Monitor</rol>
 	</receptor>
 	<cuerpo orden="Peticion listacompra terminada">
-		<idCLiente>23</idCliente>  
+		<idCliente>23</idCliente>  
 		<nArticulos>5</nArticulos> 
 		<listacompra>
 			<producto>
