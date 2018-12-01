@@ -16,7 +16,9 @@
         </direccion> 
         <rol>Tienda</rol>   
     </receptor> 
-    <tipo>compra</tipo> 
+    <tipo>compra</tipo>
+    <fecha>2018-10-20</fecha>
+    <hora>15:58:32</hora>
     <cuerpo> 
         <producto> 
             <nombre>p1</nombre> 
