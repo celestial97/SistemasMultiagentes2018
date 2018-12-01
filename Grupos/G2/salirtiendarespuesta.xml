@@ -3,9 +3,9 @@
         <direccion>
             <ip>192.168.1.2</ip>
             <puerto>80</puerto>
+            <hora>23:16:00</hora>
         </direccion>
         <rol>Monitor</rol>
-        <hora>20:13:00</hora> 
     </emisor>
     <receptor>
         <direccion>
@@ -14,8 +14,7 @@
         </direccion>
         <rol>Cliente</rol>            
     </receptor>
-    <cuerpo orden="Respuesta listacompra terminada">
-        <idCliente>23</idCliente> 
-        <nArticulos>5</nArticulos> 
+    <cuerpo orden="Respuesta salir de la tienda">
+        <id>23</id>
     </cuerpo>
 </mensaje>

@@ -13,10 +13,11 @@
            	  <xs:sequence>
 		    <xs:element name="ip" type="ip"/>
 		    <xs:element name="puerto" type="xs:integer"/>
+        	    <xs:element name="id" type="xs:integer"/>
             	  </xs:sequence>
           	</xs:complexType>
               </xs:element>
-              <xs:element name="rol" type="xs:string" fixed="Monitor"/>
+              <xs:element name="rol" type="xs:string" fixed="Comprador"/>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
@@ -28,56 +29,20 @@
            	  <xs:sequence>
 		    <xs:element name="ip" type="ip"/>
 		    <xs:element name="puerto" type="xs:integer"/>
-        <xs:element name="id" type="xs:integer"/>
-
             	  </xs:sequence>
           	</xs:complexType>
               </xs:element>
-              <xs:element name="rol" type="xs:string" fixed="Comprador"/>
+              <xs:element name="rol" type="xs:string" fixed="Monitor"/>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-	<xs:element name="tipo" type="xs:string" fixed="inicializacion"/>
+	<xs:element name="tipo" type="xs:string" fixed="Polling"/>
 	<xs:element name="fecha" type="xs:date"/>
 	<xs:element name="hora" type="xs:time"/>
 	<xs:element name="cuerpo">
           <xs:complexType>
             <xs:sequence>
-	      <xs:element name="listaCompra">
-		<xs:complexType>
-		  <xs:sequence>
-		    <xs:element name="producto" maxOccurs="unbounded">
-		      <xs:complexType>
-    			<xs:sequence>
-      			  <xs:element name="nombre" type="xs:string"/>
-      			  <xs:element name="cantidad" type="xs:integer"/>
-    		 	</xs:sequence>
-  		      </xs:complexType>
-		    </xs:element>
-		  </xs:sequence>
-		</xs:complexType>
-	      </xs:element>
-	      <xs:element name="listaTiendas">
-		<xs:complexType>
-		  <xs:sequence>
-		    <xs:element name="tienda" maxOccurs="unbounded">
-		      <xs:complexType>
-    			<xs:sequence>
-      			  <xs:element name="direccion">
-          		    <xs:complexType>
-           	 	      <xs:sequence>
-		    		<xs:element name="ip" type="ip"/>
-		    		<xs:element name="puerto" type="xs:integer"/>
-						<xs:element name="id" type="xs:integer"/>
-            	  	      </xs:sequence>
-          		    </xs:complexType>
-              		  </xs:element>
-    		 	</xs:sequence>
-  		      </xs:complexType>
-		    </xs:element>
-		  </xs:sequence>
-		</xs:complexType>
-	      </xs:element>
+	      <xs:element name="tipoEvento" type="xs:string" fixed="Is ready"/>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
