@@ -2,21 +2,28 @@
 <mensaje> 
     <emisor> 
         <direccion> 
-            <ip>192.168.1.1</ip>
-            <puerto>80</puerto> 
-        </direccion>    
-        <rol>Tienda</rol> 
+            <ip>192.168.1.1</ip> 
+            <puerto>80</puerto>
+            <id>23</id>
+        </direccion> 
+        <rol>Tienda</rol>   
     </emisor> 
     <receptor> 
         <direccion> 
             <ip>192.168.1.2</ip> 
-            <puerto>80</puerto> 
-        </direccion>    
+            <puerto>80</puerto>
+            <id>12</id>
+        </direccion> 
         <rol>Comprador</rol>   
     </receptor> 
-    <tipo>venta</tipo> 
-    <cuerpo>
-        <tipoEvento>Aviso|Error|Evento</tipoEvento> 
-        <contenido>Mensaje de aviso</contenido> 
+    <tipo>venta</tipo>
+    <fecha>2018-10-20</fecha>
+    <hora>15:58:32</hora>
+    <cuerpo> 
+        <producto> 
+            <nombre>p1</nombre> 
+            <cantidad>8</cantidad> 
+        </producto> 
     </cuerpo> 
 </mensaje>
+

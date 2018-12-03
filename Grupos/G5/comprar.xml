@@ -3,18 +3,22 @@
     <emisor> 
         <direccion> 
             <ip>192.168.1.1</ip> 
-            <puerto>80</puerto> 
+            <puerto>80</puerto>
+            <id>23</id>
         </direccion> 
         <rol>Comprador</rol>   
     </emisor> 
     <receptor> 
         <direccion> 
             <ip>192.168.1.2</ip> 
-            <puerto>80</puerto> 
+            <puerto>80</puerto>
+            <id>12</id>
         </direccion> 
         <rol>Tienda</rol>   
     </receptor> 
-    <tipo>compra</tipo> 
+    <tipo>compra</tipo>
+    <fecha>2018-10-20</fecha>
+    <hora>15:58:32</hora>
     <cuerpo> 
         <producto> 
             <nombre>p1</nombre> 
