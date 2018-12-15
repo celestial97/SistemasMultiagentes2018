@@ -63,6 +63,15 @@ Proyecto de clase de Sistemas Multiagentes impartido en la ESIIAB
 8. El Monitor responderá con un mensaje negativo ([plantilla](https://github.com/Kaysera/SistemasMultiagentes2018/blob/master/Grupos/G6/EjemploNotReady.xml)) mientras la simulación no esté iniciada. Cuando lo esté, pasará al paso 9
 9. El Monitor enviará un mensaje de inicio de simulación ([plantilla](https://github.com/Kaysera/SistemasMultiagentes2018/blob/master/Grupos/G6/EjemploGO.xml)) a los agentes Consumidor, que no tendrá que ser respondido, y los agentes Consumidor iniciarán la simulación
 
+### Tiendas y clientes
+ **No olvidar replicar todos los mensajes a monitor**
+1. Todos los clientes que quieran acceder al as tiendas, mandarán un mensaje de inicialización, en el que enviarán todas las tiendas que conocen ([plantilla](https://github.com/Kaysera/SistemasMultiagentes2018/blob/master/Grupos/G3/Inicializaci%C3%B3n_Cliente_Tienda.xml)). Entonces, el cliente esperará una respuesta con tipo "conexion" y cuerpo ""conexion", "<estado> Ok </estado> <msg>Todo perfecto</msg>"", o tipo "error" en caso de algun fallo
+2. Cuando el cliente quiera meterse a una tienda, ha de enviar la petición de entrada ([plantilla](https://github.com/Kaysera/SistemasMultiagentes2018/blob/master/Grupos/G3/Conexi%C3%B3n_Cliente_Tienda.xml)). Este recibirá un XML con todas las tiendas que los clientes de ahí conocen ([plantilla](https://github.com/Kaysera/SistemasMultiagentes2018/blob/master/Grupos/G3/Inicializaci%C3%B3n_Servidor_Cliente.xml)).
+3. Para que el cliente compre, este envía el xml con el producto pedido ([plantilla](https://github.com/Kaysera/SistemasMultiagentes2018/blob/master/Grupos/G5/comprar.xml)). **Para la tienda en php ha de enviarse un producto por xml, para la tienda java pueden enviarse tantos como se quiera**
+4. El cliente se queda a la espera de un XML, en el que se envía que producto y que cantidad de este se le ha vendido ([plantilla]()https://github.com/Kaysera/SistemasMultiagentes2018/blob/master/Grupos/G5/respuesta.xml)
+5. Si el cliente quiere salir de la tienda o simplemente terminar la conexión, ha de enviar una peticion de cierre de tipo "fin", el servidor le contestará para confirmar. **Si quiere cambiar de tienda, ha de realizar este paso, y luego regresar al paso 2**
+
+
 -----
 
 ## Mensajes necesarios
