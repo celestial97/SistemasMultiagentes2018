@@ -1,0 +1,24 @@
+<mensaje>
+  <emisor>
+    <direccion>
+      <ip>192.168.1.1</ip>
+      <puerto>80</puerto>
+      <id>12</id>
+    </direccion>
+    <rol>tienda</rol>
+  </emisor>
+  <receptor>
+    <direccion>
+      <ip>192.168.1.2</ip>
+      <puerto>80</puerto>
+      <id>10</id>
+    </direccion>
+    <rol>cliente</rol>
+  </receptor>
+  <tipo> fin </tipo>
+  <fecha>2018-10-20</fecha>
+  <hora>15:58:32</hora>
+  <cuerpo>
+    <msg>ACK</msg>
+  </cuerpo>
+</mensaje>
