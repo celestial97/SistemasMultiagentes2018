@@ -10,10 +10,13 @@
     <direccion>
       <ip>192.168.1.2</ip>
       <puerto>80</puerto>
+      <id>11</id>
     </direccion>
     <rol>Comprador</rol>
   </receptor>
   <tipo>inicializacion</tipo>
+  <fecha>2018-10-20</fecha>
+  <hora>15:58:32</hora>
   <cuerpo>
     <listaCompra>
       <producto>
@@ -38,6 +41,7 @@
         <direccion>
           <ip>192.168.1.3</ip>
           <puerto>80</puerto>
+          <id>1234</id>
         </direccion>
       </tienda>
     </listaTiendas>

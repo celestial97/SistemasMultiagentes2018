@@ -1,8 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?> 
 <mensaje>
   <emisor>
     <direccion>
       <ip>192.168.1.1</ip>
       <puerto>80</puerto>
+      <id>12</id>
     </direccion>
     <rol>tienda</rol>
   </emisor>
@@ -10,12 +12,14 @@
     <direccion>
       <ip>192.168.1.2</ip>
       <puerto>80</puerto>
+      <id>10</id>
     </direccion>
     <rol>tienda</rol>
   </receptor>
   <tipo> conexion </tipo>
+  <fecha>2018-10-20</fecha>
+  <hora>15:58:32</hora>
   <cuerpo>
-        <id> IDTienda </id>
         <estado> Ok | Error </estado>
         <msg>Mensaje de aviso</msg>
   </cuerpo>

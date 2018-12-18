@@ -3,6 +3,7 @@
     <direccion>
       <ip>192.168.1.1</ip>
       <puerto>80</puerto>
+      <id>11</id>
     </direccion>
     <rol>Comprador</rol>
   </emisor>
@@ -14,6 +15,8 @@
     <rol>Monitor</rol>
   </receptor>
   <tipo>evento</tipo>
+  <fecha>2018-10-20</fecha>
+  <hora>15:58:32</hora>
   <cuerpo>
     <tipoEvento>ACK</tipoEvento>
     <contenido>Agente iniciado correctamente</contenido>

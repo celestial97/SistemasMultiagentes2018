@@ -28,56 +28,28 @@
            	  <xs:sequence>
 		    <xs:element name="ip" type="ip"/>
 		    <xs:element name="puerto" type="xs:integer"/>
-        <xs:element name="id" type="xs:integer"/>
-
+        	    <xs:element name="id" type="xs:string" />
             	  </xs:sequence>
           	</xs:complexType>
               </xs:element>
-              <xs:element name="rol" type="xs:string" fixed="Comprador"/>
+              <xs:element name="rol">
+	        <xs:simpleType>
+		  <xs:restriction base="xs:string">
+		    <xs:enumeration value="Comprador"/>
+		    <xs:enumeration value="Tienda"/>
+		  </xs:restriction>
+		</xs:simpleType>
+	      </xs:element>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-	<xs:element name="tipo" type="xs:string" fixed="inicializacion"/>
+	<xs:element name="tipo" type="xs:string" fixed="evento"/>
 	<xs:element name="fecha" type="xs:date"/>
 	<xs:element name="hora" type="xs:time"/>
 	<xs:element name="cuerpo">
           <xs:complexType>
             <xs:sequence>
-	      <xs:element name="listaCompra">
-		<xs:complexType>
-		  <xs:sequence>
-		    <xs:element name="producto" maxOccurs="unbounded">
-		      <xs:complexType>
-    			<xs:sequence>
-      			  <xs:element name="nombre" type="xs:string"/>
-      			  <xs:element name="cantidad" type="xs:integer"/>
-    		 	</xs:sequence>
-  		      </xs:complexType>
-		    </xs:element>
-		  </xs:sequence>
-		</xs:complexType>
-	      </xs:element>
-	      <xs:element name="listaTiendas">
-		<xs:complexType>
-		  <xs:sequence>
-		    <xs:element name="tienda" maxOccurs="unbounded">
-		      <xs:complexType>
-    			<xs:sequence>
-      			  <xs:element name="direccion">
-          		    <xs:complexType>
-           	 	      <xs:sequence>
-		    		<xs:element name="ip" type="ip"/>
-		    		<xs:element name="puerto" type="xs:integer"/>
-						<xs:element name="id" type="xs:integer"/>
-            	  	      </xs:sequence>
-          		    </xs:complexType>
-              		  </xs:element>
-    		 	</xs:sequence>
-  		      </xs:complexType>
-		    </xs:element>
-		  </xs:sequence>
-		</xs:complexType>
-	      </xs:element>
+	      <xs:element name="tipoEvento" type="xs:string" fixed="Not ready"/>
             </xs:sequence>
           </xs:complexType>
         </xs:element>

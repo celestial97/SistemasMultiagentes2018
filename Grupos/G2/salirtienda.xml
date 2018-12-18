@@ -1,0 +1,20 @@
+<mensaje>
+	<emisor>
+		<direccion>
+			<ip>192.168.1.1</ip>
+			<puerto>80</puerto>
+			<hora>23:15:55</hora>
+		</direccion>
+		<rol>Cliente</rol>
+	</emisor>
+	<receptor>
+		<direccion>
+			<ip>192.168.1.2</ip>
+			<puerto>80</puerto>
+		</direccion>
+		<rol>Monitor</rol>
+	</receptor>
+	<cuerpo orden="Peticion salir de la tienda">
+		<idcliente>10</idcliente>
+	</cuerpo>
+</mensaje>

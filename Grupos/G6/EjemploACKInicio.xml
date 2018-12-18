@@ -10,12 +10,16 @@
     <direccion>
       <ip>192.168.1.2</ip>
       <puerto>80</puerto>
+      <id/>
     </direccion>
     <rol>Comprador</rol>
   </receptor>
   <tipo>evento</tipo>
+  <fecha>2018-10-20</fecha>
+  <hora>15:58:32</hora>
   <cuerpo>
     <tipoEvento>ACK</tipoEvento>
     <contenido>Inicio registrado</contenido>
+    <nuevoID>1526</nuevoID>
   </cuerpo>
 </mensaje>
